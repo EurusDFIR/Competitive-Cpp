@@ -151,7 +151,7 @@ Max: 9 at index 4
 
 **Output**:
 ```
-1 3 99 4 5
+1 99 3 4 5
 ```
 
 **Hint**: Dùng `insert(v.begin() + pos, value)` và `erase(v.begin() + pos)`. Chú ý insert/erase là O(n).
