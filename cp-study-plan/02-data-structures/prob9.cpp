@@ -19,8 +19,8 @@ int main(){
 
     }
 
-    int currSum=0;
-    int maxSum = INT_MIN;
+    // int currSum=0;
+    // int maxSum = INT_MIN;
 
     //BRUTE FORCE WAY: vetcan
     // for (int i=0;i<n;++i){
@@ -33,6 +33,19 @@ int main(){
     // }
 
     // cout<<maxSum<<"\n";
+
+    //Kadane Algorithms way
+    int curSum=v[0];
+    int maxSum =v[0];
+    for (int i=1;i<n;++i){
+        int x = v[i];
+        curSum= max(x, curSum+x);
+        maxSum=max(curSum, maxSum);
+
+    }
+    cout<<maxSum;
+
+
 
 
 }
